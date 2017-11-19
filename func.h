@@ -1,6 +1,6 @@
-//
-// Created by Ben Cradick on 11/19/17.
-//
+//Ben Cradick
+//cs2750 Pa5
+//11-19-2017
 
 #ifndef CRADICK_PA5_FUNC_H
 #define CRADICK_PA5_FUNC_H
