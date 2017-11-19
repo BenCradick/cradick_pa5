@@ -3,3 +3,6 @@
 //
 
 #include "func.h"
+void checkString(char *argv[], int argc, int current){
+
+}
