@@ -1,11 +1,13 @@
 /*Ben Cradick
- * cs 2750 PA
+ * cs 2750 PA5
  * 11-19-2017
  * */
 #include "func.h"
+#include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[]){
-    int total = 0;
+    long total = 0;
+    char *endptr;
 
     if(argc > 200){
          //capping the maximum number of command line arguments at 200
@@ -16,12 +18,12 @@ int main(int argc, char *argv[]){
     int i = 0;
 
     for(i = 0; i < argc; i++){
-        /*strtol converts whatever it recieves as input to long int which I cast to int
+        /*strtol converts whatever it receives as input to long int which I cast to int
          *if an input is not an integer it returns a 0 which doesn't affect our end goal here.
          */
-        total += (int)strtol(argv, 10);
+        total += strtol(*argv, &endptr, 10);
 
     }
-    printf("\n%s\t%d\n", "Total of all arguments:", total);
+    printf("\n%s\t%ld\n", "Total of all arguments:", total);
 }
 
