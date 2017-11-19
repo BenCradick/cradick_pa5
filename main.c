@@ -20,6 +20,8 @@ int main(int argc, char *argv[]){
          *if an input is not an integer it returns a 0 which doesn't affect our end goal here.
          */
         total += (int)strtol(argv, 10);
+
     }
+    printf("\n%s\t%d\n", "Total of all arguments:", total);
 }
 
