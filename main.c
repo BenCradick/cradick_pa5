@@ -26,5 +26,12 @@ int main(int argc, char *argv[]){
 
     }
     printf("\n%s\t%ld\n", "Total of all arguments:", total);
+    int subStrings;
+
+    //going to check to see if the current string is a substring of future inputs.
+
+    for(subStrings = 1; subStrings < argc; subStrings++) {
+        checkStrings( argc, argv, subStrings);
+    }
 }
 

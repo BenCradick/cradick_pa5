@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-void checkString(char *argv[], int argc, int current){
+void checkString(int argc,char *argv[argc], int current){
     char *endptr;
     if(*argv[current] != '0' && strtol(argv[current], &endptr, 10) == 0){
         int i;
