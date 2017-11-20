@@ -31,7 +31,7 @@ int main(int argc, char *argv[]){
     //going to check to see if the current string is a substring of future inputs.
 
     for(subStrings = 1; subStrings < argc; subStrings++) {
-        checkStrings( argc, argv, subStrings);
+        checkString( argc, argv, subStrings);
     }
 }
 

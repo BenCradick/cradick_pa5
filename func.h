@@ -7,5 +7,5 @@
 
 #ifndef CRADICK_PA5_FUNC_H
 #define CRADICK_PA5_FUNC_H
-void checkStrings( int argc, char* argv[argc], int currentArg);
+void checkString( int argc, char* argv[argc], int currentArg);
 #endif //CRADICK_PA5_FUNC_H
