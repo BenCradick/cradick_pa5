@@ -17,11 +17,12 @@ int main(int argc, char *argv[]){
 
     int i = 0;
 
-    for(i = 0; i < argc; i++){
+    for(i = 1; i < argc; i++){
         /*strtol converts whatever it receives as input to long int which I cast to int
          *if an input is not an integer it returns a 0 which doesn't affect our end goal here.
          */
-        total += strtol(*argv, &endptr, 10);
+
+        total += strtol(argv[i], &endptr, 10);
 
     }
     printf("\n%s\t%ld\n", "Total of all arguments:", total);
