@@ -1,10 +1,7 @@
-//
-// Created by Ben Cradick on 11/20/17.
-//
-/*TODO: tuh done*/
-
-#ifndef CRADICK_PA5_PHONE_FMT_H
-#define CRADICK_PA5_PHONE_FMT_H
+#PHONE.C
+phone.c takes command line input and filters out non digits and plugs the first 10 integers into the the standard
+American format for telephone numbers (xxx)xxx-xxxx
+The function works as so:
 /*
  * Takes in a character input strips out all the non integer characters, grabs the first ten and puts them into
  * the format of a telephone standardized for the United States (xxx)xxx-xxxx
@@ -24,5 +21,3 @@
  * is run.
  * 9) prints the phone number it was given in the correct format
  */
-void formatNumber(int len, char input[len]);
-#endif //CRADICK_PA5_PHONE_FMT_H
