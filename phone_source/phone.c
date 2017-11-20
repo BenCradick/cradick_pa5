@@ -6,6 +6,8 @@
 #include <string.h>
 #include "phone_fmt.h"
 
+
+//TODO: COMMENT EVERYTHING
 int main(){
     char phoneNumber[200];
     int len;
@@ -25,7 +27,7 @@ int main(){
          phoneNumber[strlen(phoneNumber)-1] = '\0';
     }
     len = strlen(phoneNumber);
-    formatNumber(len, phoneNumber[len]);
+    formatNumber(len, phoneNumber);
 
 
 
