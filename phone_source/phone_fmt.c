@@ -3,3 +3,6 @@
 //
 
 #include "phone_fmt.h"
+void formatNumber(){
+
+}

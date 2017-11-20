@@ -3,8 +3,30 @@
 //November 19 2017
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "phone_fmt.h"
 
-int main(int argc, int* argv[]){
+int main(){
+    char phoneNumber[200];
+    printf("\nPlease enter a 10 digit phone number(3 digit area code + 7 digit phone number):\t");
+
+    fgets(phoneNumber, 200, stdin);
+    if (phoneNumber[strlen(phoneNumber)-1] != '\n') {
+        int len = 0;
+        while (fgetc(stdin) != '\n') {
+            len++;
+        }
+        if(len > 0){
+            printf("Too many characters entered into the field\n");
+        }
+    }
+    else{
+         phoneNumber[strlen(phoneNumber)-1] = '\0';
+    }
+
+
+
+
 
 
 }
