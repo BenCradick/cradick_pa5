@@ -3,6 +3,7 @@
 //
 
 #include "phone_fmt.h"
-void formatNumber(){
+void formatNumber(int len, char* input[len]){
+
 
 }

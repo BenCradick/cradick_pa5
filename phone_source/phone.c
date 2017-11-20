@@ -8,6 +8,7 @@
 
 int main(){
     char phoneNumber[200];
+    int len;
     printf("\nPlease enter a 10 digit phone number(3 digit area code + 7 digit phone number):\t");
 
     fgets(phoneNumber, 200, stdin);
@@ -23,8 +24,8 @@ int main(){
     else{
          phoneNumber[strlen(phoneNumber)-1] = '\0';
     }
-
-
+    len = strlen(phoneNumber);
+    formatNumber(len, phoneNumber[len]);
 
 
 
