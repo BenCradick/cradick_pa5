@@ -24,9 +24,10 @@ int main(){
         }
     }
     else{
-         phoneNumber[strlen(phoneNumber)-1] = '\0';
+        phoneNumber[strlen(phoneNumber)-1] = '\0';
     }
-    len = strlen(phoneNumber);
+
+    len = (int)strlen(phoneNumber);
     formatNumber(len, phoneNumber);
 
 

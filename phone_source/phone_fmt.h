@@ -5,5 +5,5 @@
 
 #ifndef CRADICK_PA5_PHONE_FMT_H
 #define CRADICK_PA5_PHONE_FMT_H
-void formatNumber(int len, char* input[len]);
+void formatNumber(int len, char input[len]);
 #endif //CRADICK_PA5_PHONE_FMT_H
